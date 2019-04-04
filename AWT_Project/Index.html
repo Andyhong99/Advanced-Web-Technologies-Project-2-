@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Home Page</title>
+    <link href="Content/CSS/Style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <h1> Beyond Health Online Drug Store </h1>
+    </header>
+    <nav>
+        <a href="Index.html" class="active">Home</a>
+        <a href="Prescription.html">Prescription</a>
+        <a href="Health&Beauty.html">Health & Beauty</a>
+        <a href="Login.html">My Account</a>
+        <a href="contactus.html">Contact Us</a>
+    </nav>
+    <main>
+        <div id="wrapper">
+            <h2>Welcome to Beyond Health</h2>
+            <p>
+                Beyond health is an online pharmacy store where patients can
+                order their regular pills by creating account online and uploading
+                their prescriptions and can get delivered to there home address.
+            </p>
+            <p>
+                Beyond health is trustworthy and will soon be a leading supplier
+                of Canadian and International drugs.
+                However, Beyond Health is a member of Ontario Pharmactics Association.
+                If you have any question kindly, contact to Ontario Pharmactics Association
+                at 1800-369-7878. Or Email it on: abc@ontariopharmacy.com
+            </p>
+            <p>
+                In addition, to dispensing from our affliliated Canadian Dispensing
+                pharmacy.
+            </p>
+            <canvas id="mycanvas" width="250" height="300"> </canvas>
+
+
+            <div style="display:none;">
+                <img id="frame" src="Content/Images/Association.jpg" width="250" height="300" />
+
+            </div>
+            <script>
+
+                window.onload = function () {
+                    var c = document.getElementById("mycanvas");
+                    var ctx = c.getContext("2d");
+                    var img = document.getElementById("frame");
+                    ctx.drawImage(img, 0, 0);
+
+
+                };
+
+            </script>
+        </div>
+    </main>
+
+    <footer>
+        Copyright &copy; 2019 | Designed by <a href="andyhong99@yahoo.com"> Andy </a>
+    </footer>
+    
+</body>
+
+</html>

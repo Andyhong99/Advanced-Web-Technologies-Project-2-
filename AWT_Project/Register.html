@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Welcome to Registration Page</title>
+    <link href="Content/CSS/Style.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/jquery-3.3.1.js"></script>
+    <script src="Scripts/register.js""></script>
+ </head>
+<body>
+    <header>
+        <h1> Beyond Health Online Drug Store </h1>
+    </header>
+    <nav>
+        <a href="Index.html">Home</a>
+        <a href="Prescription.html">Prescription</a>
+        <a href="Health&Beauty.html">Health & Beauty</a>
+        <a href="Login.html">My Account</a>
+        <a href="contactus.html">Contact Us</a>
+    </nav>
+    <div id="container">
+        <header>
+            <hgroup id="headertext">
+                <h2>Registration for New Patient</h2>
+            </hgroup>
+        </header>
+        <div role="main">
+            <table id="register">
+                <thead>
+                    <tr>
+                        <th>Email</th>
+                        <th>First Name</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div id="editregister">
+                <h2 id="currentAction"></h2>
+                <div>
+                    First Name:<input type="text" name="First Name" required />
+                </div>
+                <div>
+                    Last Name:<input type="text" name="First Name" required />
+                </div>
+                <div>
+                    Address:<textarea name="address" rows="3" cols="21" required></textarea>
+                </div>
+                <div>
+                    Gender: <input type="radio" name="gender" value="Male" checked required />Male
+                    &nbsp;&nbsp;&nbsp;<input type="radio" name="gender" value="Female" />Female
+                </div>
+                <div>
+                    Contact Number:<input type="number" name="Contact" required pattern="[0-9]{10}" />
+                </div>
+                <div>
+                    BirthDate:<input type="date" name="bday" max="2019-03-22" required />
+                </div>
+                <div>
+                    City:<input type="text" name="city" required />
+                </div>
+                <div>
+                    Country:<input type="text" name="country" required />
+                </div>
+                <div>
+                    Email:<input type="email" name="email" required />
+                </div>
+                <div>
+                    Password:<input type="password" name="passwd" required />
+                </div>
+                <div>
+                    Confirm Password:<input type="password" name="confrmpswd" required />
+                </div>
+                <div>
+                    <input type="submit" value="Submit" onclick="Login.html" id="btnsave"/>
+                </div>
+            </div>
+        </div>
+      </div>
+   
+    <footer>
+        Copyright &copy; 2019 | Designed by <a href="andyhong99@yahoo.com"> Andy </a>
+    </footer>
+
+</body>
+</html>

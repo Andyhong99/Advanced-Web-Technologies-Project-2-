@@ -1,0 +1,173 @@
+﻿@media screen and (max-width:600px)
+{
+    .nav.responsive{
+        position:relative;
+            }
+    .nav.responsive a{
+        float:none;
+        display:inline-block;
+        text-align:left;
+    }
+
+    .main{
+        width:100%;
+    }
+}
+@font-face {
+    font-family: 'BLKCHCRY';
+    src: url('Content/BLKCHCRY.TTF') format('truetype');
+}
+body {
+    background-color: powderblue;
+    text-align: center;
+    font-size:1.2em;
+   color:midnightblue;
+}
+header h1 {
+    font-family:BLKCHCRY;
+    color: dodgerblue;
+    
+    font-style:italic;
+}
+nav {
+    height:50px;
+    width:100%;
+    background-color:steelblue;
+    overflow:hidden;
+ }
+    nav a {
+        padding: 20px;
+        padding-top: 10px;
+        color: papayawhip;
+        text-decoration: none;
+        text-align: center;
+        display: inline-block;
+        font-size: 1.2em;
+    }
+
+#mycanvas{
+    
+    position:absolute;
+    left:20px;
+    margin:0;   
+}
+h2{
+    font-style:oblique;
+    color:royalblue;
+}
+footer{
+    position:absolute;
+    left:0px;
+    margin-bottom:0;
+    margin-top:780px;
+    background-color:steelblue;
+    text-align:center;
+    width:100%;
+    height:30px;
+}
+ h4{
+    text-align:left;
+   position:absolute;
+   left:10px;
+   margin:2px;
+   text-decoration:underline;
+   
+}
+ address{
+     margin-top:25px;
+     text-align:left;
+     left:10px;
+     
+ }
+ .flip-box{
+     background-color:transparent;
+     width:100%;
+     height:250px;
+     border:1px solid lightgray;
+     perspective:1000px;
+ }
+ .flip-box-inner{
+     position:relative;
+     width:100%;
+     height:100%;
+     text-align:center;
+     transition:transform 0.8s;
+     transform-style:preserve-3d;
+ }
+
+ .flip-box:hover .flip-box-inner{
+     transform:rotateY(180deg);
+ }
+
+ .flip-box-front , .flip-box-back{
+     position:absolute;
+     width:100%;
+     height:100%;
+     backface-visibility:hidden;
+ }
+ .flip-box-front{
+     background-color:#bbb;
+     color:black;
+ }
+ .responsive{
+     width:100%;
+     height:auto;
+ }
+ .flip-box-back{
+     background-color:dodgerblue;
+     color:white;
+     transform:rotateY(180deg);
+ }
+ div[role="main"]{
+     float:left;
+     width:60%;
+ }
+#editregister{
+    border:1px;
+    margin-top:20px;
+    width:400px;
+}
+#editregister h2{
+    padding-left:10px;
+    margin-top:10px;
+   font-size:18px;
+   width:200px;
+}
+#editregister div{
+    width:350px;
+    padding:10px;
+    padding-left:450px;
+    padding-right:350px;
+}
+#editregister div.buttons{
+    text-align:center;
+}
+#editregister input{
+    width:150px;
+    padding:2px;
+}
+button{
+    width:200px;
+    margin-top:10px;
+}
+#register{
+    width:400px;
+    border:1px;
+    margin:0px;
+    padding:0px;
+}
+#register thead{
+    font-weight:bold;
+    text-align:left;
+}
+#register tbody tr:nth-child(even){
+    background-color:lightslategray;
+}
+#register th{
+    border-style:none none solid;
+    border-width:0 0 1px;
+}
+#register th, #register td{
+    margin:0px;
+    padding:5px 10px;
+}

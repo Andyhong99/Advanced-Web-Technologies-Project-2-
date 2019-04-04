@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Contact Us</title>
+    <link href="Content/CSS/Style.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/jquery-3.3.1.js"></script>
+    
+</head>
+<body>
+    <header>
+        <h1> Beyond Health Online Drug Store </h1>
+    </header>
+    <nav>
+        <a href="Index.html">Home</a>
+        <a href="Prescription.html">Prescription</a>
+        <a href="Health&Beauty.html">Health & Beauty</a>
+        <a href="Login.html">My Account</a>
+        <a href="contactus.html">Contact Us</a>
+    </nav>
+    <h2>Contact Beyond Health Pharamcy</h2>
+    <h3>Our customer Service specialist are available from 5:30am to 6:00pm Mon-Fri and 7:00am to 3:00pm Sat/Sun (EST)  </h3>
+
+    <b>Toll Free Tel:1-877-800-2781(DRUG) </b><br />
+    <b>Toll Free Fax:1-866-350-8879</b>
+    <h4>Mailing Address</h4>
+    <address>
+        Beyond Health.ca<br />
+        425, Bloor Street West,<br />
+        Toronto, ON <br />
+        Canada<br />
+        M4K 1K1<br />
+
+    </address>
+    <script>
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function (position) {
+                var pos = {
+                    lat: position.coords.latitude,
+                    lng: position.coords.longitude
+                };
+                infoWindow.setPosition(pos);
+                infoWindow.setContent('Location found');
+                infoWindow.open(map);
+                map.setCenter(pos);
+            }, function () {
+                handleLocationError(true, infoWindow, Map.getCenter());
+            });
+        }
+            else {
+            handleLocationError(false, infoWindow, map.getCenter());
+        }
+        }
+        function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+            infoWindow.setPosition(pos);
+            infoWindow.setContent(browserHasGeolocation ? 'Error: The Geolocation service failed.' :
+                'Error: Your browser doesn\'t support geolocation');
+            infoWindow.open(map);
+        }
+    </script>
+
+    <footer>
+        Copyright &copy; 2019 | Designed by <a href="andyhong99@yahoo.com"> Andy </a>
+    </footer>
+
+</body>
+</html>
